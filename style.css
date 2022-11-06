@@ -1,0 +1,38 @@
+
+
+body{
+    background-color: #00ADB5;
+    font-family: 'Montserrat';
+}
+.subcontenedor{
+    color: #EEEEEE;
+    background-color: #393E46;
+}
+
+.navegacion{
+    background-color: #EEEEEE;
+    padding: 1em;
+}
+    
+.navegacion .ul{
+    list-style: none; 
+    
+}
+
+.navegacion .li{
+    color: black;
+    background-color: lightblue;
+    padding: 1em;
+    margin: 0 1em 0 0;
+}
+
+.formulario{
+    color: #EEEEEE;
+    background-color: #393E46;
+}
+.formulario .label{
+    color:#222831
+}
+.formulario input{
+    padding-right: 50px;
+}
