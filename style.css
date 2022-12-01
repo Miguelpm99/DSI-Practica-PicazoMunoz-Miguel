@@ -45,28 +45,37 @@ body{
 .titulo{
     text-align: center;
 }
-.flex_container{
+.contenedor{
+    background-color:#393E46 ;
+    color: #EEEEEE;
+    margin-top: 50px;
+    /*
     position:relative;
     display: flex;
     flex-wrap:  wrap;
     justify-content: center;
     align-content: space-between;
     align-items: flex-start;
-    
+    */
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    grid-template-areas;
 }
-.parrafo{
-    width: 600px;
-    margin-left: 10px;
-    
-}
-.imagenes{
-    width: 300px;
-    margin-left: 10px;
-    display: flex;
-	flex: 2;
-    
+.contenedor_parrafos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
+
+@media screen and (max-width: 718px){
+    .contenedor .contenedor_parrafos{
+        grid-template-columns: 1fr;
+    }
+    .contenedor .imagenes{
+        grid-column: 1 / -1;
+    }
+    
+}
 
 
 
